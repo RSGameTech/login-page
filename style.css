@@ -1,0 +1,151 @@
+/* Reset */
+html {
+    box-sizing: border-box;
+    font-size: 1.2em;
+    /* transition: all 2s ease; */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Import */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+/* Basic Page Styling */
+body {
+    font-family: "JetBrains Mono", monospace;
+    /* font-optical-sizing: auto; */
+    background-image: url("assets/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    overflow: hidden;
+    height: 100svh;
+}
+
+/* Main Page Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0.8em;
+    background-color: rgba(34, 34, 34, 0.4);
+    backdrop-filter: blur(1em);
+    gap: 0.8em;
+    border-radius: 1em;
+    > form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8em;
+        > .login {
+            display: flex;
+            flex-direction: column;
+            > input {
+                padding: 0.4em;
+                border: none;
+                border-radius: 0.4em;
+                background-color: rgba(34, 34, 34, 0.7);
+                color: #ffffff;
+                font-size: 0.8em;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+        > .extra {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8em;
+            > .remember {
+                display: flex;
+                align-items: center;
+                gap: 0.4em;
+                > input {
+                    cursor: pointer;
+                }
+            }
+            > a {
+                color: #ffffff;
+            }
+        }
+        > button {
+            padding: 0.4em;
+            border: none;
+            border-radius: 0.4em;
+            background-color: rgb(34, 34, 34, 0.8);
+            color: #ffffff;
+            font-size: 1em;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            &:hover {
+                background-color: rgb(34, 34, 34, 1);
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        width: calc(100% - 2em);
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 30em;
+    }
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+p {
+    text-align: center;
+    font-size: 0.8em;
+    > a {
+        color: #ffffff;
+    }
+}
+
+h3 {
+    text-align: center;
+}

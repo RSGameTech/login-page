@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Login Page</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Welcome</h1>
+            <form>
+                <div class="login username">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" required />
+                </div>
+                <div class="login password">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required />
+                </div>
+                <div class="login extra">
+                    <div class="remember">
+                        <input type="checkbox" name="remember" id="remember" />
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a href="forgot.php">Forgot password?</a>
+                </div>
+                <button type="submit" id="login" onclick="console.log('Hello! Login User')">Login</button>
+            </form>
+        </div>
+        <div class="container">
+            <p>Don't have an account? <a href="">Register</a></p>
+        </div>
+        <script async src="script.js"></script>
+    </body>
+</html>
