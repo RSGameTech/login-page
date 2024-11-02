@@ -4,11 +4,11 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
-        <title>Login</title>
+        <title>Register</title>
     </head>
     <body>
         <div class="container">
-            <h1>Login</h1>
+            <h1>Register</h1>
             <form>
                 <div class="login username">
                     <label for="username">Username</label>
@@ -17,6 +17,10 @@
                 <div class="login password">
                     <label for="password">Password</label>
                     <input type="password" name="password" id="password" required />
+                </div>
+                <div class="login password">
+                    <label for="password">Confirm Password</label>
+                    <input type="password" name="confirm-password" id="confirm-password" required />
                 </div>
                 <div class="login extra">
                     <div class="remember">
@@ -29,7 +33,7 @@
             </form>
         </div>
         <div class="container">
-            <p>Don't have an account? <a href="register.html">Register</a></p>
+            <p>Already have an account? <a href="index.html">Login</a></p>
             <div class="settings">
                 <button>Change Background</button>
             </div>
