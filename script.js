@@ -6,7 +6,7 @@ const password = document.querySelector("#password");
 const login_msg = document.querySelector(".container");
 const changeBgButton = document.querySelector(".settings button");
 
-const backgrounds = ["assets/bg1.jpg", "assets/bg2.jpg", "assets/bg3.jpg", "assets/bg4.jpg"];
+const backgrounds = ["assets/bg1.jpg", "assets/bg2.jpg", "assets/bg3.jpg", "assets/bg4.jpg", "assets/bg5.png", "assets/bg6.png"];
 let currentBgIndex = localStorage.getItem("bgIndex") ? parseInt(localStorage.getItem("bgIndex")) : 0;
 document.body.style.backgroundImage = `url(${backgrounds[currentBgIndex]})`;
 
